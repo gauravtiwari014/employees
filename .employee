@@ -1,0 +1,59 @@
+public class Employee12 {
+	
+
+
+	String empName;
+	String empAddress;
+	int empSalary;
+	
+	//Parameterless Constructor
+	public Employee12()
+	{
+		empName = "Harsha";
+		empAddress = "RTNagar";
+		empSalary = 1000;
+	}
+	public Employee12(String empName,String empAddress,int empSalary)
+	{
+		this.empName = empName;
+		this.empAddress = empAddress;
+		this.empSalary = empSalary;
+	}
+	public Employee12(String empName,String empAddress)
+	{
+		this.empName = empName;
+		this.empAddress = empAddress;
+
+	}
+	public Employee12(String empName)
+	{
+		this.empName = empName;
+	}
+
+	public void displayEmployeeDetails()
+	{
+		System.out.println("Displaying Employee Details....");
+		System.out.println("Employee Name "+empName);
+		System.out.println("Employee Address "+empAddress);
+		System.out.println("Employee Salary "+empSalary);
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee12 emp1 = new Employee12();//Parameterless constr invoked
+		emp1.displayEmployeeDetails();
+		System.out.println("--------------------");
+		//Overloaded contrt invoked with 3 parameters
+		Employee12 emp2 = new Employee12("Kiran Kumar","Jayanagar",2000);
+		emp2.displayEmployeeDetails();
+		System.out.println("--------------------");
+		Employee12 emp3 = new Employee12("Om Bhalla");
+		emp3.displayEmployeeDetails();
+		System.out.println("--------------------");
+		Employee12 emp4 = new Employee12("Om Bhalla","KCCHostel");
+		emp4.displayEmployeeDetails();
+
+	}
+
+}
+
